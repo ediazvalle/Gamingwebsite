@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamingDojo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="purp">.</div>
+            <div class="links">
+                <h1 class="title">Gaming<span class="dojo">Dojo</span></h1>
+                <form class="currency">
+                    <select name="money">
+                        <option value="euro">Euro €</option>
+                        <option value="dollars">Dollar $</option>
+                    </select>
+                </form>
+                <div class="cart">
+                    <img class="navImg" src="cart-light.png" alt="shopping cart">
+                    <span id="cartAmount"><u>0</u></span>
+                </div>
+                <img class="navImg" src="search-light.png" alt="search">
+            </div>    
+        </div>
+    <h2>Highlights</h2>
+        <div id="banner">
+            <div id="bannerImg">
+                <img id="Img" src="cafe-neko.png" alt="cafe neko game">
+            </div>
+            <button class="prev" onclick="prevImg()"><img class="left" src="chevron-left.png" alt="left"></button>
+            <button class="next" onclick="nextImg()"><img class="right"  src="chevron-left.png" alt="right"></button>
+        </div>
+        <div class="bottom">
+            <div class="game">
+                <img class="gameImg" src="cafe-neko.png" alt="cafe neko game">
+                <h3 class="gameTitle">Cafe Neko: Gold Edition</h3>
+                    <img class="logo" src="windows.png" alt="windows logo">
+                    <span><img class="logo" src="apple.png" alt="apple logo"></span>
+                    <p class="strike">€14.98</p>
+                <p class="botLine"><span class="discount">-20%</span>  <span class="price">€10.49</span>  <button class="buy" onclick="addToCart()">Buy</button></p>
+            </div>
+            <div class="game">
+                <img class="gameImg" src="pixel-ninjas-2.png" alt="pixel ninjas 2 game">
+                <h3 class="gameTitle">Pixel Ninjas 2</h3>
+                    <img class="logo" src="windows.png" alt="windows logo">
+                    <span><img class="logo" src="apple.png" alt="apple logo"></span>
+                    <p class="strike">€8.19</p>
+                <p class="botLine"><span class="discount">-10%</span>  <span class="price">€7.49</span>  <button class="buy" onclick="addToCart()">Buy</button></p>
+            </div>
+            <div class="game">
+                <img class="gameImg" src="stonepunk.png" alt="stonepunk game"> 
+                <h3 class="gameTitle">StonePunk 10000 BCE</h3>
+                    <img class="logo" src="windows.png" alt="windows logo">
+                    <span><img class="logo" src="apple.png" alt="apple logo"></span>
+                    <span><button class="logoBtn" onclick="alert('This game is supported on Linux')" ><img class="logo" src="linux.png" alt="linux logo"></button></span>
+                <div class="botLine2">
+                    <span class="discount">NEW</span>  <span class="price2">€19.99</span>  <button class="buy2" onclick="addToCart()">Buy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
